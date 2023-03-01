@@ -1,0 +1,666 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/montserrat/Montserrat-Thin.otf);
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(./font/montserrat/Montserrat-Bold.ttf);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.mainHeader {
+    background-color: #21243d;
+}
+
+/* START */
+.mobileheader {
+    background-color: #21243d;
+}
+
+i.fa-solid.fa-bars {
+    color: #fff;
+}
+
+.navbar_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 100px;
+}
+
+.navbar-mobile ul {
+    display: none;
+}
+
+.navbar-mobile ul li {
+    list-style: none;
+    /* color: #000; */
+    list-style: none;
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    background-color: #21243d;
+}
+
+.navbar-mobile ul li:hover {
+    background-color: #000;
+}
+
+form {
+    background-color: #21243d;
+    padding: 0px 5px;
+}
+
+.searchmobile {
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+.navbar-mobile ul a {
+    text-decoration: none;
+}
+
+/* END */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Montserrat;
+    padding: 0 40px;
+    font-weight: 600;
+}
+
+.header ul li:last-child {
+    margin-right: 35px;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.search img {
+    max-width: 80%;
+}
+
+.bannerText {
+    padding: 20px 0 30px;
+
+}
+
+.bannerText h3 {
+    font-family: Montserrat-bold;
+    font-size: 25px;
+}
+
+.bannerText p {
+    font-weight: bolder;
+    font-family: Montserrat;
+    margin: 10px 0 25px 0;
+}
+
+/* BANNER */
+.bannerimage {
+    display: flex;
+}
+
+.bannerimage img {
+    width: 100%;
+    height: auto;
+}
+
+.bannersection {
+    position: relative;
+    background: #935e39;
+}
+
+.bannerText a {
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 12px 20px;
+    background-color: #21243d;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Montserrat-bold;
+}
+
+.popular_menu {
+    background-color: #21243d;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.popular_menu .popmenutop h3 {
+    font-size: 30px;
+    font-family: Montserrat-bold;
+    color: #fff;
+}
+
+.popular_menu .popmenutop p {
+    font-size: 16px;
+    text-align: center;
+    font-family: Montserrat;
+    color: #fff;
+}
+
+.popmenu img {
+    padding: 28px 0 0 0;
+    width: 80%;
+}
+
+.popmenu h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: Montserrat-bold;
+    /* padding-bottom: 10px; */
+}
+
+.popmenu p {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+    font-family: Montserrat;
+}
+
+
+/* FOOTER */
+.footermain {
+    background-color: #000;
+}
+
+.footerleft ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footerleft ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footerleft p:nth-child(1) {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Montserrat;
+    padding-top: 15px;
+}
+
+.footerleft p:nth-child(2) {
+    color: #fff;
+
+    padding: 18px 0 30px 0;
+    font-size: 17px;
+    font-family: Montserrat;
+}
+
+
+.footerright ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footerright p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Montserrat;
+    padding: 11px 0 15px 0;
+    border-bottom: 1px solid #008000;
+    display: inline-block;
+}
+
+.footerAll {
+    text-align: center;
+}
+
+.footerright ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 2em;
+    font-family: Montserrat;
+}
+
+.footerright ul li a:hover {
+    border-bottom: 1px solid #9acd32;
+    color: #00ffff;
+}
+
+.footerright {
+    padding-bottom: 22px;
+}
+
+.mainHeader {
+    display: none;
+}
+
+/* @media screen and (min-width: 320px) {} */
+
+@media screen and (min-width: 375px) {
+
+    .popular_menu .popmenutop p {
+        font-size: 19px;
+    }
+
+    .popmenu p {
+        font-size: 17px;
+    }
+
+    @media screen and (min-width: 425px) {
+        .navbar-mobile ul li {
+            font-size: 20px;
+        }
+
+        .popular_menu .popmenutop p {
+            font-size: 21px;
+        }
+
+        .popmenu p {
+            font-size: 21px;
+        }
+
+        .popular_menu .popmenutop h3 {
+            padding-bottom: 10px;
+        }
+
+        .popmenu img {
+            width: 70%;
+        }
+
+        .footerleft p:nth-child(2) {
+            font-size: 19px;
+        }
+
+        .bannerText h3 {
+            font-size: 28px;
+        }
+
+        .bannerText p {
+            font-size: 19px;
+        }
+
+        .footerright ul li a {
+            font-size: 21px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-mobile ul li {
+        font-size: 22px;
+    }
+
+    .bannerText {
+        text-align: center;
+    }
+
+    .bannerText h3 {
+        font-size: 29px;
+    }
+
+    .bannerText p {
+        font-size: 24px;
+        margin: 10px 0 33px;
+    }
+
+    .popular_menu {
+        padding: 24px 0px;
+    }
+
+    .popmenu img {
+        width: 36%;
+    }
+
+    .popmenu h3 {
+        font-size: 24px;
+    }
+
+    .popmenu p {
+        font-size: 22px;
+    }
+
+    .footerleft p:nth-child(1) {
+        padding-top: 25px;
+        font-size: 28px;
+    }
+
+    .footerleft p:nth-child(2) {
+        font-size: 24px;
+    }
+
+    .footerright p {
+        font-size: 26px;
+    }
+
+    .footerright ul li a {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 55px;
+    }
+
+    .mobileheader {
+        display: none;
+    }
+
+    .mainHeader {
+        display: block;
+    }
+
+    .header ul li a {
+        font-size: 19px;
+    }
+
+    .popular_menu .popmenutop h3 {
+        font-size: 35px;
+    }
+
+    .popmenu img {
+        width: 100%;
+    }
+
+    .bannerText {
+        position: absolute;
+        top: 30%;
+        width: 50%;
+        padding: 0px;
+    }
+
+    .bannerText {
+        text-align: left;
+    }
+
+    .bannerText h3 {
+        color: #fff;
+        font-size: 87px;
+    }
+
+    .bannerText p {
+        color: #fff;
+        font-size: 22px;
+        padding: 31px 0;
+        margin: 0px;
+    }
+
+    .bannerText a {
+        font-size: 18px;
+        padding: 12px 38px;
+    }
+
+    .popular_menu {
+        padding: 52px 0;
+    }
+
+    .popular_menu .popmenutop h3 {
+        font-size: 43px;
+    }
+
+    .popular_menu .popmenutop p {
+        /* padding: 10px 400px; */
+        font-size: 20px;
+    }
+
+    .popmenu h3 {
+        font-size: 23px;
+    }
+
+    .popmenu p {
+        font-size: 15px;
+    }
+
+    .popularmenubottom {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .popmenu {
+        width: 23%;
+    }
+
+    .popmenu img {
+        padding: 37px 0 17px;
+    }
+
+    .footermain {
+        padding: 160px 0;
+        display: flex;
+    }
+
+    .footerAll {
+        display: flex;
+    }
+
+    .footerleft {
+        text-align: start;
+    }
+
+    .footerleft ul li a img {
+        width: 77%;
+    }
+
+    .footerleft {
+        width: 69%;
+    }
+
+    .footerright p {
+        font-size: 23px;
+        padding-bottom: 0px;
+    }
+
+    .footerright ul li a {
+        font-size: 20px;
+    }
+
+    .footerright ul li a {
+        width: 30%;
+    }
+
+    .footerleft p:nth-child(2) {
+        width: 85%;
+        font-size: 20px;
+    }
+
+    .footerleft ul {
+        justify-content: initial;
+        gap: 0px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .header ul li a {
+        font-size: 21px;
+    }
+
+    .bannerText {
+        top: 29%;
+    }
+
+    .bannerText h3 {
+        font-size: 118px;
+    }
+
+    .bannerText p {
+        font-size: 27pX;
+        padding: 35px 0;
+    }
+
+    .popular_menu .popmenutop h3 {
+        font-size: 46px;
+    }
+
+    .popular_menu .popmenutop p {
+        font-size: 23px;
+    }
+
+    .popular_menu {
+        padding: 60px 0;
+    }
+
+    .popmenu img {
+        padding: 52px 0 17px;
+    }
+
+    .popmenu h3 {
+        font-size: 26px;
+    }
+
+    .popmenu p {
+        font-size: 18px;
+    }
+
+    .footerleft {
+        width: 45%;
+    }
+
+    .footerright p {
+        font-size: 27PX;
+    }
+
+    .footerleft p:nth-child(1) {
+        font-size: 27px;
+    }
+
+    .footerleft p:nth-child(2) {
+        width: 82%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header ul li a {
+        font-size: 24px;
+    }
+
+    .bannerText h3 {
+        font-size: 125px;
+    }
+
+    .bannerText p {
+        font-size: 29px;
+    }
+
+    .bannerText a {
+        font-size: 19px;
+    }
+
+    .bannerText p {
+        padding: 39px 0;
+    }
+
+    .popular_menu {
+        padding: 65px 0;
+    }
+
+    .popmenu p {
+        font-size: 19px;
+    }
+
+    .footerleft p:nth-child(2) {
+        font-size: 21px;
+    }
+
+    .footerright ul li {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header ul li a {
+        font-size: 30px;
+    }
+
+    .bannerText {
+        top: 28%;
+    }
+
+    .bannerText h3 {
+        font-size: 170px;
+    }
+
+    .bannerText p {
+        font-size: 38px;
+        padding: 55px 0 67px 0;
+    }
+
+    .popular_menu .popmenutop h3 {
+        font-size: 50px;
+
+    }
+
+    .popular_menu .popmenutop p {
+        font-size: 25px;
+    }
+
+    .popmenu p {
+        font-size: 21px;
+    }
+
+    .popmenu img {
+        width: 92%;
+    }
+
+    .footerleft p:nth-child(2) {
+        font-size: 26px;
+
+    }
+
+    .footerleft {
+        width: 43%;
+    }
+
+    .footerleft p:nth-child(1) {
+        font-size: 29px;
+    }
+
+    .footerright p {
+        font-size: 29px;
+    }
+
+    .footerright ul li a {
+        font-size: 26px;
+    }
+
+    .footerleft ul li a img {
+        width: 83%;
+    }
+}
